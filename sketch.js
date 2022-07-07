@@ -24,17 +24,17 @@ let lifeSpan = 500;
 let thikness = 5;
 let transparency = 20;
 
-function preload() {
-  img = loadImage(flag);
-}
-  
+
 // Create a new canvas to match the browser size
 function setup() {
   createCanvas(windowWidth, windowHeight);
    background(0);
 }
 
-
+function preload() {
+  img = loadImage(flag);
+}
+  
 // On window resize, update the canvas size
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
