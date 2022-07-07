@@ -12,7 +12,7 @@
 //  @email marlon@dance-tech.net
 
 
-let highway = "usa.jpg";
+let flag = "usa.jpg";
 let group = [];
 let grid = 30;
 let img;
@@ -24,17 +24,18 @@ let lifeSpan = 500;
 let thikness = 5;
 let transparency = 20;
 
-// Create a new canvas to match the browser size
+function preload() {
+  flag= "usa.jpg";
+}
+  
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
    background(0);
 }
 
-function preload() {
-  img = loadImage(highway);
-}
 
-// On window resize, update the canvas size
+
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
    background(0);
